@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <iframeset>
+      <iframe name="t1" src="./t1.html"></iframe>
+      <iframeset>
+        <iframe name="t2" target="t3" src="./t2a.html"></iframe>
+        <iframe name="t3" target="_self" src="./t3.html"></iframe>
+        <iframe name="t4" src="./t4.html"></iframe>
+      </iframeset>
+      <iframe name="t5" src="./t5.html"></iframe>
+    </iframeset>
+  </body>
+  <style>
+    iframe[name="t1"] {
+      height: 80px;
+      width: 100%;
+    }
+    iframe[name="t2"],
+    iframe[name="t4"] {
+      height: 770px;
+      width: 12%;
+    }
+    iframe[name="t3"] {
+      height: 770px;
+      width: 74%;
+    }
+    iframe[name="t5"] {
+      height: 70px;
+      width: 100%;
+    }
+  </style>
+</html>

@@ -35,14 +35,24 @@
     </div>
 </body>
 <style>
+    body {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        height: 550px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #FFF3E4;
+    }
+
     div.main {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-self: center;
     }
 
     div.first {
-        background: lightgray;
+        background: #EED6C4;
         padding: 30px;
     }
 
@@ -53,10 +63,11 @@
     #btn {
         padding: 8px;
         margin-top: 10px;
-        background-color: lightcoral;
+        background-color: #6B4F4F;
         cursor: pointer;
-        color: #fff;
+        color: #FFF3E4;
         font-weight: 700;
+        border-radius: 5px;
     }
 </style>
 

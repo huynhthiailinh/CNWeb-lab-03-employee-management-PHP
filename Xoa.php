@@ -1,6 +1,6 @@
 <?php
-$link = mysqli_connect("localhost", "root", "") or die("Khong the ket noi den CSDL MySQL");
-mysqli_select_db($link, "dulieu");
+$link = mysqli_connect('localhost', 'root', '') or die('Could not connect');
+mysqli_select_db($link, 'dulieu');
 $sql = "SELECT * FROM employee";
 $result = mysqli_query($link, $sql);
 ?>
@@ -22,15 +22,17 @@ $result = mysqli_query($link, $sql);
             <th>Tên nhân viên</th>
             <th>Mã phòng ban</th>
             <th>Địa chỉ</th>
+            <th>Xóa</th>
         </tr>
         <?php
         while ($row = mysqli_fetch_array($result)) {
-            echo "<tr>
-                    <td class='center'>" . $row["id"] . "</td>
-                    <td>" . $row["name"] . "</td>
-                    <td class='center'>" . $row["department_id"] . "</td>
-                    <td>" . $row["address"] . "</td>
-                </tr>";
+            echo '<tr>
+                    <td class="center">' . $row['id'] . '</td>
+                    <td>' . $row['name'] . '</td>
+                    <td class="center">' . $row['department_id'] . '</td>
+                    <td>' . $row['address'] . '</td>
+                    <td class="center"><a href="Xulixoa.php?employee_id=' . $row['id'] . '">Xóa</a></td>
+                </tr>';
         }
         ?>
     </table>
