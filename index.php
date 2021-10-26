@@ -23,7 +23,7 @@
             <div class="btn_input">
                 <input class="btn" type="submit" value="OK">
                 <input class="btn" type="reset" value="Reset">
-                <a class="btn" href="./index.html">Guest</a>
+                <a class="btn" href="./indexb.html">Guest</a>
             </div>
         </form>
     </div>
